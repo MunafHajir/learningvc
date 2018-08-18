@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Profile</title>
+
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+
+    <!-- Styles -->
+    <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/css/lib/helper.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+    .control-hide{
+      display: none;
+    }
+    .control-show{
+      cursor: pointer;
+      display: inline-block;
+      
+    }
+    </style>
+  </head>
+
+  <body>
+
+      <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+          <div class="nano">
+              <div class="nano-content">
+                  <ul>
+                      <div class="logo" style="background: white;">
+                          <a href="index.html">
+                              <img src="img/logo.png" alt="" />
+                          </a>
+                      </div>
+  
+                      <li >
+                          <a class="sidebar-sub-toggle" href="stud_dashboard.html">
+                              <i class="ti-home"></i> Dashboard </a>
+  
+                      </li>
+  
+  
+  
+                      <li class="active">
+                          <a href="app-profile.html">
+                              <i class="ti-user"></i> Profile</a>
+                      </li>
+  
+  
+                      <li>
+                          <a>
+                              <i class="ti-close"></i> Logout</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    <!-- /# sidebar -->
+
+
+    <div class="header">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="float-left">
+                      <!-- <div class="hamburger sidebar-toggle">
+                              <span class="line"></span>
+                              <span class="line"></span>
+                              <span class="line"></span>
+                          </div> -->
+                  </div>
+                  <div class="float-right">
+                      <ul>
+
+
+
+                          <li class="header-icon dib">
+                              <span class="user-avatar">John
+                                  <i class="ti-angle-down f-s-10"></i>
+                              </span>
+                              <div class="drop-down dropdown-profile">
+                                  <div class="dropdown-content-heading">
+                                      <span class="text-left">Upgrade Now</span>
+                                      <p class="trial-day">30 Days Trail</p>
+                                  </div>
+                                  <div class="dropdown-content-body">
+                                      <ul>
+                                          <li>
+                                              <a href="#">
+                                                  <i class="ti-user"></i>
+                                                  <span>Profile</span>
+                                              </a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">
+                                                  <i class="ti-email"></i>
+                                                  <span>Inbox</span>
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  <i class="ti-settings"></i>
+                                                  <span>Setting</span>
+                                              </a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">
+                                                  <i class="ti-lock"></i>
+                                                  <span>Lock Screen</span>
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  <i class="ti-power-off"></i>
+                                                  <span>Logout</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="content-wrap">
+      <div class="main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 p-r-0 title-margin-right">
+              <div class="page-header">
+                <div class="page-title">
+                  <h1>Welcome<span> John</span></h1>
+                </div>
+              </div>
+            </div>
+            <!-- /# column -->
+            <div class="col-lg-4 p-l-0 title-margin-left">
+              <div class="page-header">
+                <div class="page-title">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./stud_dashboard.html">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Profile</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- /# column -->
+          </div>
+          <!-- /# row -->
+          <section id="main-content">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="user-profile">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="user-photo m-b-30">
+                            <img class="img-fluid" src="assets/images/user-profile.jpg" alt="" />
+                            <div class= "control-hide" id="edit-upload"style="padding-top:45px;padding-left:60px;"><button id="edit" class="btn btn-primary btn-addon" type="button"><i class="ti-upload"></i>Upload Profile Image</button></div>
+                          </div>
+                          <div class="user-work">
+                           <h4>work   <i class="ti-pencil control-hide" id = "edit-work" style="float: right;" onclick="changeWork()" ></i></h4> 
+                            <div class="work-content" id="hide-1">
+                              <h3 >It Solution </h3>
+                              <p>123, South Mugda</p>
+                              <p>New York, 1214</p>
+                            </div>
+                            <div  class="control-hide" id="show-1">  
+                            <input class="input-md col-md-12" type="text" placeholder="company name">
+                              <br>
+                              <br>
+                            <textarea class="input-md col-md-12" type="text" placeholder="address"></textarea>
+
+                          </div>
+                              
+                            
+                            
+                          </div>
+                          <div class="user-skill">
+                            <h4>Skill <i class="ti-pencil control-hide" id = "edit-skill" style="float: right;" onclick="changeSkill()" ></i> </h4>
+
+                            
+                            <ul>
+                              <li><a href="#">Branding</a> <i class="ti-close control-hide" id="show-close" style="float:right;"></i></li>
+                              <li class="control-hide" id="show-3"><input type="text" class="input-sm col-lg-12" placeholder="Add Skill"></li>
+                            </ul>
+                          
+
+                            
+                          </div>
+                        </div>
+                        <div class="col-lg-8">
+                          <div class="user-profile-name" id="edit-name1"  >john doe</div>
+                          <div id="edit-name2" class="control-hide" style="margin-bottom: 5px;"><input class="input input-lg" type="text" placeholder="Ex:   john doe" ></div>
+                          <div class="user-Location"><i class="ti-location-pin"></i> New York, New York</div>
+                          <div class="user-job-title">Product Designer</div>
+                          <div class="ratings">
+                            <h4>Ratings</h4>
+                            <div class="rating-star">
+                              <span>8.9</span>
+                              <i class="ti-star color-primary"></i>
+                              <i class="ti-star color-primary"></i>
+                              <i class="ti-star color-primary"></i>
+                              <i class="ti-star color-primary"></i>
+                              <i class="ti-star"></i>
+                            </div>
+                          </div>
+                         
+                          <div class="user-send-message"><button  class="btn btn-primary btn-addon edited" type="button"><i class="ti-pencil-alt"></i>Edit Profile</button></div>
+                          <div class="custom-tab user-profile-tab">
+                            <ul class="nav nav-tabs" role="tablist">
+                              <li role="presentation" class="active"><a href="#1" aria-controls="1" role="tab" data-toggle="tab">About</a></li>
+                            </ul>
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="1">
+                                <div class="contact-information">
+                                  <h4>Contact information <i class="ti-pencil control-hide" id = "edit-contact" style="margin-left:300px; " onclick="changeContact()"></i> </h4>
+                                  <div class="phone-content">
+                                    <span class="contact-title">Phone:</span>
+                                    <span class="phone-number" id="phone">+8801629599859 <i class="ti-close show-close control-hide" style="float:right;" onclick="$('#phone').addClass('control-hide'); $('#phone-edit').removeClass('control-hide'); $('#phone-edit').addClass('control-show');"></i></span>
+                                    <span class="control-hide" id="phone-edit"><input type="text" class="inp-md col-md-12 "></span>  
+                                  </div>
+                                  <div class="address-content">
+                                    <span class="contact-title">Address:</span>
+                                    <span class="mail-address" id="addr">123, Rajar Goli, South Mugda <i class="ti-close show-close control-hide" style="float:right;" onclick="$('#addr').addClass('control-hide'); $('#addr-edit').removeClass('control-hide'); $('#addr-edit').addClass('control-show');" ></i></span>
+                                    <span class="control-hide" id="addr-edit"><input type="text" class="inp-md col-md-12 "></span>  
+                                    
+                                  </div>
+                                  <div class="email-content">
+                                    <span class="contact-title">Email:</span>
+                                    <span class="contact-email" id="email-ed">hello@Admin Board.com <i class="ti-close show-close control-hide" style="float:right;" onclick="$('#email-ed').addClass('control-hide'); $('#email-edit').removeClass('control-hide'); $('#email-edit').addClass('control-show');"></i></span>
+                                    <span class="control-hide" id="email-edit"><input type="text" class="inp-md col-md-12 "></span>  
+                                    
+                                  </div>
+                                  <div class="website-content">
+                                    <span class="contact-title">Website:</span>
+                                    <span class="contact-website" id="web">www.Admin Board.com <i class="ti-close show-close control-hide" style="float:right;" onclick="$('#web').addClass('control-hide'); $('#web-edit').removeClass('control-hide'); $('#web-edit').addClass('control-show');" ></i></span>
+                                    <span class="control-hide" id="web-edit"><input type="text" class="inp-md col-md-12 "></span>  
+                                    
+                                  </div>
+                                  <div class="skype-content">
+                                    <span class="contact-title">Skype:</span>
+                                    <span class="contact-skype" id="skype">Admin Board <i class="ti-close show-close control-hide" style="float:right;" onclick="$('#skype').addClass('control-hide'); $('#skype-edit').removeClass('control-hide'); $('#skype-edit').addClass('control-show');" ></i></span>
+                                    <span class="control-hide" id="skype-edit"><input type="text" class="inp-md col-md-12 "></span>  
+                                    
+                                  </div>
+                                </div>
+                                <div class="basic-information">
+                                  <h4>Basic information <i class="ti-pencil control-hide" id = "edit-basic" style="margin-left:300px; " onclick="infor()"></i></h4>
+                                  <div class="birthday-content">
+                                    <span class="contact-title">Birthday:</span>
+                                    <span class="birth-date" id="birthdate">January 31, 1990 <i class="ti-close show-closed control-hide" style="float:right;" onclick="$('#birthdate').addClass('control-hide'); $('#birth-edit').removeClass('control-hide'); $('#birth-edit').addClass('control-show');" ></i></span>
+                                    <span class="control-hide" id="birth-edit"><input type="text" class="inp-md col-md-12 "></span>  
+
+                                  </div>
+                                  <div class="gender-content">
+                                    <span class="contact-title">Gender:</span>
+                                    <span class="gender" id="gender">Male <i class="ti-close show-closed control-hide" style="float:right;" onclick="$('#gender').addClass('control-hide'); $('#gender-edit').removeClass('control-hide'); $('#gender-edit').addClass('control-show');" ></i></span>
+                                    <span class="control-hide" id="gender-edit"><input type="text" class="inp-md col-md-12 "></span>  
+
+                                  </div>
+
+                                  <div>
+                                      <button class="btn btn-primary control-hide" id="submit">Submit Changes</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /# row -->
+        
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer">
+                  <p>2018 © Admin Board. - <a href="#">example.com</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+    function changeWork() {
+        $('#hide-1').addClass('control-hide');
+        $('#show-1').removeClass('control-hide');
+        $('#show-1').addClass('control-show');
+
+    }
+
+    function changeSkill(){
+        $('#show-close').removeClass('control-hide');
+        
+        $('#show-close').addClass('control-show');
+        
+        $('#show-3').removeClass('control-hide');
+        $('#show-3').addClass('control-show');
+
+
+
+
+    }
+
+    function changeContact(){
+      $('.show-close').removeClass('control-hide');
+      $('.show-close').addClass('control-show');
+    }
+
+    function infor(){
+      
+      $('.show-closed').removeClass('control-hide');
+      $('.show-closed').addClass('control-show');
+
+    }
+    </script>
+    <script>
+
+      
+      $(document).ready(function(){
+          
+          $('.edited').click(function(){
+            $('#submit').removeClass('control-hide');
+            $('#submit').addClass('control-show');
+            $('#edit-upload').removeClass('control-hide');
+            $('#edit-upload').addClass('control-show');
+            
+            $('#edit-name1').addClass('control-hide');
+            $('#edit-name2').addClass('control-show');
+            
+            $('#edit-work').removeClass('control-hide');
+            $('#edit-work').addClass('control-show');
+
+            $('#edit-skill').removeClass('control-hide');
+            $('#edit-skill').addClass('control-show');
+
+            $('#edit-contact').removeClass('control-hide');
+            $('#edit-contact').addClass('control-show');
+
+            $('#edit-basic').removeClass('control-hide');
+            $('#edit-contact').addClass('control-show');
+          }
+  
+
+        
+          );
+
+          
+  
+      });
+      </script>
+
+
+    </script>
+   
+
+
+
+  </body>
+
+</html>
